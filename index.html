@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TecnoHml – Portfólio Criativo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      background: linear-gradient(90deg, #2b7df0, #5e60ce);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      font-size: 1em;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #2b7df0;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .contato {
+      text-align: center;
+      margin-top: 50px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .contato p {
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .contato a {
+      display: inline-block;
+      background-color: #2b7df0;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      animation: pulse 2s infinite;
+      transition: background 0.3s ease;
+    }
+
+    .contato a:hover {
+      background-color: #1a5ccc;
+    }
+
+    @media (min-width: 768px) {
+      .servicos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TecnoHml</h1>
+    <p>Sites criativos e personalizados para todas as ocasiões</p>
+  </header>
+
+  <section class="servicos">
+    <div class="card">
+      <h2>💖 Site de Namoro Surpresa</h2>
+      <p>Surpreenda quem você ama com um site cheio de carinho, frases e corações animados.</p>
+    </div>
+
+    <div class="card">
+      <h2>🎉 Site de Aniversário</h2>
+      <p>Um presente inesquecível com fotos, música e contagem regressiva até o dia especial.</p>
+    </div>
+
+    <div class="card">
+      <h2>💼 Currículo ou Portfólio</h2>
+      <p>Se destaque com um site profissional mostrando sua história, habilidades e redes sociais.</p>
+    </div>
+
+    <div class="card">
+      <h2>🍔 Sites para Negócios Locais</h2>
+      <p>Lanchonetes, costureiras, manicures e mais: páginas simples que vendem por você.</p>
+    </div>
+
+    <div class="card">
+      <h2>📝 Formulários Personalizados</h2>
+      <p>Ideal para eventos, RSVP, lista de presença ou coleta de informações com elegância.</p>
+    </div>
+
+    <div class="card">
+      <h2>🔗 Site Link na Bio</h2>
+      <p>Organize todos os seus links em uma página personalizada para Instagram ou TikTok.</p>
+    </div>
+  </section>
+
+  <div class="contato">
+    <p>Gostou? Vamos criar algo incrível juntos:</p>
+    <a href="https://wa.me/558597522344" target="_blank">📲 Fale comigo no WhatsApp</a>
+  </div>
+
+</body>
+</html>
